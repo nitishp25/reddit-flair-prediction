@@ -1,1 +1,1 @@
-# reddit-flair-detector
+# reddit-flair-prediction
