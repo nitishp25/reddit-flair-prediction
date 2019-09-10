@@ -74,15 +74,15 @@ These models were trained on the following features:
 - URL
 
 These features were used because of significant amount of natural language content in them.
-Title, comments and URL were combined for multivariate classification to increase accuracy.
+Title, Comments and Body were combined for multivariate classification to increase accuracy.
 
 Following are the **highest** accuracies for a particular feature:
 
-| Feature               | Model                | Accuracy    |
-| --------------------- | -------------------- |:-----------:|
-| Title                 | Logistic Regression  | 0.6963      |
-| Body                  | SGD/LinearSVM        | 0.3666      |
-| URL                   | SGD/LinearSVM        | 0.2972      |
-| Comments              | SGD/LinearSVM        | 0.5879      |
-| Title, Comments & URL | SGD/LinearSVM        | 0.7440      |
+| Feature                | Model                | Accuracy    |
+| ---------------------- | -------------------- |:-----------:|
+| Title                  | Logistic Regression  | 0.6963      |
+| Body                   | SGD/LinearSVM        | 0.3666      |
+| URL                    | SGD/LinearSVM        | 0.2972      |
+| Comments               | SGD/LinearSVM        | 0.5879      |
+| Title, Comments & Body | Random Forest        | 0.8113      |
 
