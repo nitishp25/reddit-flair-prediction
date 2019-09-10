@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600|Roboto&display=swap" rel="stylesheet">
+    <title>Reddit Flair Detector</title>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1>Reddit Flair Predictor</h1>
+            <form method = "POST">
+                <input type="url" name="url" placeholder="Enter URL" class="text" required>
+                <input type="submit" name="submit" value="SUBMIT" class="submit">
+            </form>
+            <form method = "POST" action="/analysis">
+                <input type="submit" name="analysis" value="ANALYSIS" class="analysis">
+            </form>
+            <center><h1>{{ data[0] }}</h1></center>
+        </div>
+    </div>
+</body>
+</html>

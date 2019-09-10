@@ -1,0 +1,91 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-1.0.2.min.css" type="text/css" />
+        <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-widgets-1.0.2.min.css" type="text/css" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css">
+
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-1.0.2.min.js"></script>
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-widgets-1.0.2.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        <h1>Data Analysis</h1>
+          
+          
+            
+              <div class="bk-root" id="a062da5e-14b7-4ed7-a947-34cb5539d7af"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="1219">
+          {"389a8e77-b86d-4955-9678-ca4079db347c":{"roots":{"references":[{"attributes":{"callback":null,"tabs":[{"id":"1102","type":"Panel"},{"id":"1103","type":"Panel"}]},"id":"1104","type":"Tabs"},{"attributes":{},"id":"1046","type":"BasicTickFormatter"},{"attributes":{"items":[{"id":"1049","type":"LegendItem"}],"location":"top_left","plot":{"id":"1003","subtype":"Figure","type":"Plot"}},"id":"1048","type":"Legend"},{"attributes":{"below":[{"id":"1013","type":"CategoricalAxis"}],"left":[{"id":"1017","type":"LinearAxis"}],"plot_height":400,"plot_width":1500,"renderers":[{"id":"1013","type":"CategoricalAxis"},{"id":"1016","type":"Grid"},{"id":"1017","type":"LinearAxis"},{"id":"1021","type":"Grid"},{"id":"1030","type":"BoxAnnotation"},{"id":"1048","type":"Legend"},{"id":"1040","type":"GlyphRenderer"}],"title":{"id":"1002","type":"Title"},"toolbar":{"id":"1028","type":"Toolbar"},"x_range":{"id":"1005","type":"FactorRange"},"x_scale":{"id":"1009","type":"CategoricalScale"},"y_range":{"id":"1007","type":"DataRange1d"},"y_scale":{"id":"1011","type":"LinearScale"}},"id":"1003","subtype":"Figure","type":"Plot"},{"attributes":{"below":[{"id":"1061","type":"CategoricalAxis"}],"left":[{"id":"1065","type":"LinearAxis"}],"plot_height":400,"plot_width":1500,"renderers":[{"id":"1061","type":"CategoricalAxis"},{"id":"1064","type":"Grid"},{"id":"1065","type":"LinearAxis"},{"id":"1069","type":"Grid"},{"id":"1078","type":"BoxAnnotation"},{"id":"1096","type":"Legend"},{"id":"1088","type":"GlyphRenderer"}],"title":{"id":"1050","type":"Title"},"toolbar":{"id":"1076","type":"Toolbar"},"x_range":{"id":"1053","type":"FactorRange"},"x_scale":{"id":"1057","type":"CategoricalScale"},"y_range":{"id":"1055","type":"DataRange1d"},"y_scale":{"id":"1059","type":"LinearScale"}},"id":"1051","subtype":"Figure","type":"Plot"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"Comments"},"width":{"value":0.5},"x":{"field":"Flair"}},"id":"1087","type":"VBar"},{"attributes":{"plot":null,"text":"Flair vs Comments"},"id":"1050","type":"Title"},{"attributes":{"callback":null,"factors":["AskIndia","Non-Political","Reddiquette","Scheduled","Photography","Science/Technology","Politics","Business/Finance","Policy/Economy","Sports","Food","AMA"]},"id":"1053","type":"FactorRange"},{"attributes":{"callback":null},"id":"1055","type":"DataRange1d"},{"attributes":{},"id":"1057","type":"CategoricalScale"},{"attributes":{},"id":"1115","type":"UnionRenderers"},{"attributes":{},"id":"1059","type":"LinearScale"},{"attributes":{"axis_label":"Flair","formatter":{"id":"1092","type":"CategoricalTickFormatter"},"plot":{"id":"1051","subtype":"Figure","type":"Plot"},"ticker":{"id":"1062","type":"CategoricalTicker"}},"id":"1061","type":"CategoricalAxis"},{"attributes":{},"id":"1062","type":"CategoricalTicker"},{"attributes":{"plot":{"id":"1051","subtype":"Figure","type":"Plot"},"ticker":{"id":"1062","type":"CategoricalTicker"}},"id":"1064","type":"Grid"},{"attributes":{"callback":null,"factors":["AskIndia","Non-Political","Reddiquette","Scheduled","Photography","Science/Technology","Politics","Business/Finance","Policy/Economy","Sports","Food","AMA"]},"id":"1005","type":"FactorRange"},{"attributes":{"axis_label":"No. of comments","formatter":{"id":"1094","type":"BasicTickFormatter"},"plot":{"id":"1051","subtype":"Figure","type":"Plot"},"ticker":{"id":"1066","type":"BasicTicker"}},"id":"1065","type":"LinearAxis"},{"attributes":{},"id":"1066","type":"BasicTicker"},{"attributes":{"plot":null,"text":"Flair vs Upvotes"},"id":"1002","type":"Title"},{"attributes":{"dimension":1,"plot":{"id":"1051","subtype":"Figure","type":"Plot"},"ticker":{"id":"1066","type":"BasicTicker"}},"id":"1069","type":"Grid"},{"attributes":{"callback":null},"id":"1007","type":"DataRange1d"},{"attributes":{"fill_color":{"value":"red"},"line_color":{"value":"red"},"top":{"field":"Comments"},"width":{"value":0.5},"x":{"field":"Flair"}},"id":"1086","type":"VBar"},{"attributes":{"callback":null,"tooltips":[["Comment","@Comments"],["Flair","@Flair"]]},"id":"1100","type":"HoverTool"},{"attributes":{},"id":"1009","type":"CategoricalScale"},{"attributes":{"data_source":{"id":"1001","type":"ColumnDataSource"},"glyph":{"id":"1086","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1087","type":"VBar"},"selection_glyph":null,"view":{"id":"1089","type":"CDSView"}},"id":"1088","type":"GlyphRenderer"},{"attributes":{},"id":"1011","type":"LinearScale"},{"attributes":{},"id":"1070","type":"PanTool"},{"attributes":{"axis_label":"Flair","formatter":{"id":"1044","type":"CategoricalTickFormatter"},"plot":{"id":"1003","subtype":"Figure","type":"Plot"},"ticker":{"id":"1014","type":"CategoricalTicker"}},"id":"1013","type":"CategoricalAxis"},{"attributes":{},"id":"1044","type":"CategoricalTickFormatter"},{"attributes":{},"id":"1071","type":"WheelZoomTool"},{"attributes":{},"id":"1014","type":"CategoricalTicker"},{"attributes":{"callback":null,"data":{"Comments":[8138,3870,15385,5892,4704,6080,9080,6219,7068,8975,11339,17677],"Flair":["AskIndia","Non-Political","Reddiquette","Scheduled","Photography","Science/Technology","Politics","Business/Finance","Policy/Economy","Sports","Food","AMA"],"Score":[7460,10068,4292,11883,17745,12078,34143,13380,14247,58775,42997,30220],"index":[0,1,2,3,4,5,6,7,8,9,10,11]},"selected":{"id":"1116","type":"Selection"},"selection_policy":{"id":"1115","type":"UnionRenderers"}},"id":"1001","type":"ColumnDataSource"},{"attributes":{"label":{"value":"Upvotes"},"renderers":[{"id":"1040","type":"GlyphRenderer"}]},"id":"1049","type":"LegendItem"},{"attributes":{"overlay":{"id":"1078","type":"BoxAnnotation"}},"id":"1072","type":"BoxZoomTool"},{"attributes":{"plot":{"id":"1003","subtype":"Figure","type":"Plot"},"ticker":{"id":"1014","type":"CategoricalTicker"}},"id":"1016","type":"Grid"},{"attributes":{},"id":"1073","type":"SaveTool"},{"attributes":{"axis_label":"Upvotes","formatter":{"id":"1046","type":"BasicTickFormatter"},"plot":{"id":"1003","subtype":"Figure","type":"Plot"},"ticker":{"id":"1018","type":"BasicTicker"}},"id":"1017","type":"LinearAxis"},{"attributes":{},"id":"1074","type":"ResetTool"},{"attributes":{"source":{"id":"1001","type":"ColumnDataSource"}},"id":"1041","type":"CDSView"},{"attributes":{},"id":"1018","type":"BasicTicker"},{"attributes":{},"id":"1075","type":"HelpTool"},{"attributes":{"dimension":1,"plot":{"id":"1003","subtype":"Figure","type":"Plot"},"ticker":{"id":"1018","type":"BasicTicker"}},"id":"1021","type":"Grid"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"1070","type":"PanTool"},{"id":"1071","type":"WheelZoomTool"},{"id":"1072","type":"BoxZoomTool"},{"id":"1073","type":"SaveTool"},{"id":"1074","type":"ResetTool"},{"id":"1075","type":"HelpTool"},{"id":"1100","type":"HoverTool"}]},"id":"1076","type":"Toolbar"},{"attributes":{},"id":"1116","type":"Selection"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"plot":null,"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"1078","type":"BoxAnnotation"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"Score"},"width":{"value":0.5},"x":{"field":"Flair"}},"id":"1039","type":"VBar"},{"attributes":{"fill_color":{"value":"blue"},"line_color":{"value":"blue"},"top":{"field":"Score"},"width":{"value":0.5},"x":{"field":"Flair"}},"id":"1038","type":"VBar"},{"attributes":{"source":{"id":"1001","type":"ColumnDataSource"}},"id":"1089","type":"CDSView"},{"attributes":{},"id":"1022","type":"PanTool"},{"attributes":{},"id":"1092","type":"CategoricalTickFormatter"},{"attributes":{},"id":"1023","type":"WheelZoomTool"},{"attributes":{},"id":"1094","type":"BasicTickFormatter"},{"attributes":{"overlay":{"id":"1030","type":"BoxAnnotation"}},"id":"1024","type":"BoxZoomTool"},{"attributes":{"items":[{"id":"1097","type":"LegendItem"}],"location":"top_left","plot":{"id":"1051","subtype":"Figure","type":"Plot"}},"id":"1096","type":"Legend"},{"attributes":{},"id":"1025","type":"SaveTool"},{"attributes":{"label":{"value":"Comment"},"renderers":[{"id":"1088","type":"GlyphRenderer"}]},"id":"1097","type":"LegendItem"},{"attributes":{},"id":"1026","type":"ResetTool"},{"attributes":{"callback":null,"tooltips":[["Upvotes","@Score"],["Flair","@Flair"]]},"id":"1098","type":"HoverTool"},{"attributes":{},"id":"1027","type":"HelpTool"},{"attributes":{"child":{"id":"1003","subtype":"Figure","type":"Plot"},"title":"Flair vs Upvotes"},"id":"1102","type":"Panel"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"1022","type":"PanTool"},{"id":"1023","type":"WheelZoomTool"},{"id":"1024","type":"BoxZoomTool"},{"id":"1025","type":"SaveTool"},{"id":"1026","type":"ResetTool"},{"id":"1027","type":"HelpTool"},{"id":"1098","type":"HoverTool"}]},"id":"1028","type":"Toolbar"},{"attributes":{"child":{"id":"1051","subtype":"Figure","type":"Plot"},"title":"Flair vs Comments"},"id":"1103","type":"Panel"},{"attributes":{"data_source":{"id":"1001","type":"ColumnDataSource"},"glyph":{"id":"1038","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1039","type":"VBar"},"selection_glyph":null,"view":{"id":"1041","type":"CDSView"}},"id":"1040","type":"GlyphRenderer"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"plot":null,"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"1030","type":"BoxAnnotation"}],"root_ids":["1104"]},"title":"Bokeh Application","version":"1.0.2"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('1219').textContent;
+                  var render_items = [{"docid":"389a8e77-b86d-4955-9678-ca4079db347c","roots":{"1104":"a062da5e-14b7-4ed7-a947-34cb5539d7af"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        embed_document(root);
+                        clearInterval(timer);
+                      }
+                      attempts++;
+                      if (attempts > 100) {
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        clearInterval(timer);
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    <center><h2>Time(hours) vs Flair</h2>
+    <img src="{{ url_for('static', filename='time.png') }}" alt="time" width="75%" height="25%">
+    </center>
+    </body>
+  
+</html>
