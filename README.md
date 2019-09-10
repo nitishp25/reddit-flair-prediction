@@ -86,3 +86,11 @@ Following are the **highest** accuracies for a particular feature:
 | Comments               | SGD/LinearSVM        | 0.5879      |
 | Title, Comments & Body | Random Forest        | 0.8113      |
 
+## Resources
+
+https://towardsdatascience.com/multi-class-text-classification-model-comparison-and-selection-5eb066197568
+http://www.storybench.org/how-to-scrape-reddit-with-python/
+https://scikit-learn.org/
+https://api.mongodb.com/python/current/tutorial.html
+https://www.tutorialspoint.com/flask/index.htm
+https://stackoverflow.com/
