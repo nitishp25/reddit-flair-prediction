@@ -3,12 +3,12 @@ import prediction
 app = Flask(__name__)
 
 # homepage
-@app.route('/')
+@app.route('https://reddit-flair-prediction-pro.herokuapp.com/')
 def index():
     return render_template('index.html')
 
 # result page
-@app.route('/',methods = ['POST'])
+@app.route('https://reddit-flair-prediction-pro.herokuapp.com/',methods = ['POST'])
 def pred():
     if request.method == 'POST':
         url = request.form['url']
@@ -18,7 +18,7 @@ def pred():
         return 
 
 # analysis page
-@app.route('/analysis', methods=['POST'])
+@app.route('https://reddit-flair-prediction-pro.herokuapp.com/analysis', methods=['POST'])
 def analysis():
     return render_template('analysis.html')
         
