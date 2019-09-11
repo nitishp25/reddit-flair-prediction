@@ -30,7 +30,7 @@ def predict(input):
     reddit = praw.Reddit(client_id='F8Ny3P98pkrxhA', client_secret='zPYybgK3UTX_xrM10IVyYnb8I68', user_agent='reddit-flair-detector')
 
     post = reddit.submission(url=input)
-    red = {"title":[], "comm":[], "url":[]}
+    red = {"title":[], "comm":[], "body":[]}
 
     # storing the post
     red['title'] = post.title
@@ -39,17 +39,18 @@ def predict(input):
     for top_comment in post.comments:
         comment = comment + ' ' + top_comment.body
     red["comm"] = comment
-    red['url'] = post.url
+    red['body'] = post.selftext
     
     red['title'] = tostr(red['title'])
     red['title'] = clean_text(red['title'])
     red['comm'] = tostr(red['comm'])
     red['comm'] = clean_text(red['comm'])
-    red['url'] = tostr(red['url'])
+    red['body'] = tostr(red['body'])
+    red['body'] = clean_text(red['body'])
     
     redd = {"title_comm":[]}
 
-    redd['title_comm'] = red['title'] + red['comm'] + red['url']
+    redd['title_comm'] = red['title'] + red['comm'] + red['body']
     
     #loading model
     model = pickle.load(open('final_model1.sav', 'rb'))
