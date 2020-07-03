@@ -41,7 +41,7 @@ for flair in flairs:
                         comment = comment + ' ' + top_comment.body
                 data["comm"].append(comment)
 
-client = MongoClient('mongodb://nitish:umeshpapa123@cluster0-shard-00-00-ifnda.mongodb.net:27017,cluster0-shard-00-01-ifnda.mongodb.net:27017,cluster0-shard-00-02-ifnda.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority')
+client = MongoClient('mongodb://nitish:*****@cluster0-shard-00-00-ifnda.mongodb.net:27017,cluster0-shard-00-01-ifnda.mongodb.net:27017,cluster0-shard-00-02-ifnda.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority')
 db = client.database
 collection = db.data_collection
 posts = db.posts
